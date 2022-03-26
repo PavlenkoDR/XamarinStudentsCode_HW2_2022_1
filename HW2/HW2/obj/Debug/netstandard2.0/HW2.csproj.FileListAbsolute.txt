@@ -1,0 +1,15 @@
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\bin\Debug\netstandard2.0\HW2.deps.json
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\bin\Debug\netstandard2.0\HW2.dll
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\bin\Debug\netstandard2.0\ref\HW2.dll
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\bin\Debug\netstandard2.0\HW2.pdb
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\HW2.csproj.AssemblyReference.cache
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\HW2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\HW2.AssemblyInfoInputs.cache
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\HW2.AssemblyInfo.cs
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\HW2.csproj.CoreCompileInputs.cache
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\HW2.dll
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\ref\HW2.dll
+C:\Users\HP\XamarinStudentsCode_HW2_2022_1\HW2\HW2\obj\Debug\netstandard2.0\HW2.pdb
