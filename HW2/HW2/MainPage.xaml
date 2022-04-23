@@ -25,11 +25,11 @@
                     <BindableLayout.ItemTemplate>
                         <DataTemplate>
                             <Grid>
-                                <AbsoluteLayout>
-                                    <Frame CornerRadius="5" AbsoluteLayout.LayoutBounds="1, 0, 0.5, 1" AbsoluteLayout.LayoutFlags="All" Padding="0">
-                                        <Image Aspect="AspectFill" Source="bin.png" HeightRequest="1"/>
-                                    </Frame>
-                                </AbsoluteLayout>
+                                <Frame CornerRadius="6" Padding="0" BackgroundColor="Red">
+                                    <AbsoluteLayout>
+                                        <Image AbsoluteLayout.LayoutBounds="1, 0, 0.50, 1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill" Source="bin.png" HeightRequest="1" ScaleX="0.3" ScaleY="0.3"/>
+                                    </AbsoluteLayout>
+                                </Frame>
                                 <Frame BorderColor="LightGray" CornerRadius="5" ClassId="{Binding id}">
                                     <Frame.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
@@ -48,17 +48,24 @@
                 <StackLayout x:Name="notes_right" HorizontalOptions="FillAndExpand" Grid.Column="1" VerticalOptions="Start">
                     <BindableLayout.ItemTemplate>
                         <DataTemplate>
-                            <Frame BorderColor="LightGray" CornerRadius="5" ClassId="{Binding id}">
-                                <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                                    <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated_1"/>
-                                </Frame.GestureRecognizers>
-                                <StackLayout>
-                                    <Label Text="{Binding visible_text}" FontSize="Medium"></Label>
-                                    <Label Text="{Binding creation_data}" FontSize="Small" Margin="0, 0, 0, -8"></Label>
-                                    <Label Text="{Binding text_count}" FontSize="Small" Margin="0, 0, 0, -8"></Label>
-                                </StackLayout>
-                            </Frame>
+                            <Grid>
+                                <Frame CornerRadius="6" Padding="0" BackgroundColor="Red">
+                                    <AbsoluteLayout>
+                                        <Image AbsoluteLayout.LayoutBounds="0, 0, 0.50, 1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill" Source="bin.png" HeightRequest="1" ScaleX="0.3" ScaleY="0.3"/>
+                                    </AbsoluteLayout>
+                                </Frame>
+                                <Frame BorderColor="LightGray" CornerRadius="5" ClassId="{Binding id}">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                        <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated_1"/>
+                                    </Frame.GestureRecognizers>
+                                    <StackLayout>
+                                        <Label Text="{Binding visible_text}" FontSize="Medium"></Label>
+                                        <Label Text="{Binding creation_data}" FontSize="Small" Margin="0, 0, 0, -8"></Label>
+                                        <Label Text="{Binding text_count}" FontSize="Small" Margin="0, 0, 0, -8"></Label>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
                         </DataTemplate>
                     </BindableLayout.ItemTemplate>
                 </StackLayout>

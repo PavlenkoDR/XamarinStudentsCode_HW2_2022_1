@@ -119,17 +119,22 @@ namespace HW2
 
         private void FramePanUpdated(object sender, PanUpdatedEventArgs e, bool isLeft)
         {
-            if (isLeft && e.TotalX > 0) return;
-            if (!isLeft && e.TotalX < 0) return;
+            var frame = sender as Frame;
+            if ((isLeft && frame.TranslationX > 0) || (!isLeft && frame.TranslationX < 0))
+            {
+                frame.TranslationX = 0;
+                return;
+            }
 
             scroll.InputTransparent = true;
-            var frame = (sender as Frame);
-            double offset = frame.Width * 0.25;
+            double offset = frame.Width * 0.5;
 
             switch (e.StatusType)
             {
                 case GestureStatus.Running:
-                    frame.TranslationX = Math.Min(offset + 1, e.TotalX);
+                    frame.TranslationX = frame.TranslationX + e.TotalX;
+                    frame.TranslationX = isLeft ? Math.Max(- offset - 1, frame.TranslationX) : Math.Min(offset + 1, frame.TranslationX);
+                    frame.TranslationX = isLeft ? Math.Min(0, frame.TranslationX) : Math.Max(0, frame.TranslationX);
                     break;
                 case GestureStatus.Completed:
                 
